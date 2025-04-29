@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Clickable Room</title>
+  <title>Point & Click Room</title>
   <style>
     body {
       margin: 0;
@@ -18,17 +18,26 @@
   </style>
 </head>
 <body>
-    <h1 class="scene-text">The cat blinks slowly at you. It purrs.</h1>
-<!-- image map-->
-<img src="assets/img/background.jpg" usemap="#image-map" alt="Room background">
+  <h1 class="scene-text">The cat blinks slowly at you. It purrs.</h1>
+<!--fix responsive image with image map -->
+<img src="assets/img/background.jpg" usemap="#image-map" alt="Room background" style="width: 100%; height: auto;">
 
+<!-- Single map element -->
 <map name="image-map">
-  <area target="_self" alt="bed" title="bed" href="page2.html" coords="156,387,643,812" shape="rect">
-  <area target="_self" alt="" title="" href="page3.html" coords="747,498,89" shape="circle">
+  <area target="_self" alt="bed" title="bed" href="page2.html" coords="139,858,598,356" shape="rect">
+  <area target="_self" alt="table" title="table" href="page3.html" coords="677,408,813,640" shape="rect">
   <area target="_self" alt="mirror" title="mirror" href="page4.html" coords="855,196,980,500" shape="rect">
   <area target="_self" alt="shelf" title="shelf" href="page5.html" coords="999,114,1322,615" shape="rect">
   <area target="_self" alt="cat" title="cat" href="page6.html" coords="807,753,1037,1046" shape="rect">
 </map>
+
+<!-- Image map resizer script -->
+<script src="https://cdn.jsdelivr.net/npm/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
+<script>
+  window.onload = function() {
+    imageMapResize();
+  };
+</script>
 
 </body>
 </html>
