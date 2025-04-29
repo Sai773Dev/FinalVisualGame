@@ -7,3 +7,15 @@ body {
 	text-align: center;
 	padding: 20px;
   }
+  .scene-text {
+	color: black;
+	font-weight: bold;
+	font-size: 1.5rem;
+	text-align: center;
+	padding: 20px;
+	text-shadow: 
+	  -1px -1px 0 white,  
+	   1px -1px 0 white,
+	  -1px  1px 0 white,
+	   1px  1px 0 white;
+  }

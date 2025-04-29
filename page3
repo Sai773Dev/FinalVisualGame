@@ -18,7 +18,7 @@
   </style>
 </head>
 <body>
-
+    <h1 class="scene-text">The table is empty. Like someone left in a hurry.</h1>
 <!-- Correct path to image -->
 <img src="assets/img/background.jpg" usemap="#image-map" alt="Room background">
 

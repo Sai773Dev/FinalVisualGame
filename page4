@@ -18,7 +18,7 @@
   </style>
 </head>
 <body>
-
+    <h1 class="scene-text">You look at yourself, but feel like a stranger.</h1>
 <!-- Correct path to image -->
 <img src="assets/img/background.jpg" usemap="#image-map" alt="Room background">
 
