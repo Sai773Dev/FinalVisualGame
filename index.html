@@ -1,27 +1,34 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>Website Template</title>
-	<link rel="stylesheet" href="./assets/css/styles.css">
+  <meta charset="UTF-8">
+  <title>Clickable Room</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background-color: #000;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
 </head>
-<bodystyle="background-image: url('assets/img/background.jpg'); 
-background-size: cover; 
-background-position: center; 
-background-repeat: no-repeat; 
-margin: 0; 
-padding: 0;">
+<body>
 
-<div id="game-container">
-  <div id="story-text">Click on an object to start...</div>
-  
-  <div class="object" id="object1">🪑 Chair</div>
-  <div class="object" id="object2">📖 Book</div>
-  <div class="object" id="object3">🌧️ Window</div>
-  
-  <button id="restart-btn" style="display:none;">Restart</button>
-</div>
+<!-- Correct path to image -->
+<img src="assets/img/background.jpg" usemap="#image-map" alt="Room background">
 
-	<script src="./assets/js/main.js"></script>
+<map name="image-map">
+  <area target="_self" alt="bed" title="bed" href="page2.html" coords="156,387,643,812" shape="rect">
+  <area target="_self" alt="table" title="table" href="page3.html" coords="661,435,828,599" shape="rect">
+  <area target="_self" alt="mirror" title="mirror" href="page4.html" coords="855,196,980,500" shape="rect">
+  <area target="_self" alt="shelf" title="shelf" href="page5.html" coords="999,114,1322,615" shape="rect">
+  <area target="_self" alt="cat" title="cat" href="page6.html" coords="807,753,1037,1046" shape="rect">
+</map>
+
 </body>
 </html>
